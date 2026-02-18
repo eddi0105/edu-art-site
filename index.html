@@ -437,7 +437,7 @@ el.textContent='Пожалуйста, укажи телефон и выбери 
 return;
 }
 var leadData={name:name,phone:phone,issue:issue,duration:duration,tried:tried};
-var botToken='8284698249:AAERckLwzoCI7KoBl3cX0LNY4Qw0kxDHUsc';
+var botToken='8284698249:AAESceBwSWaA1Y4MpOafyURxFm72ZLCy2ss';
 var chatId='318147402';
 var text='📝 НОВАЯ ЗАЯВКА С САЙТА!\n\n👤 Имя: '+(name||'Не указано')+'\n📱 Телефон: '+phone+'\n❓ Проблема: '+issue+'\n⏱ Как давно: '+(duration||'Не указано')+'\n💊 Что пробовал: '+(tried||'Не указано')+'\n\nПозвони или напиши клиенту!';
 fetch('https://api.telegram.org/bot'+botToken+'/sendMessage',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id:chatId,text:text})});
