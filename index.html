@@ -460,7 +460,7 @@ if(!chatSessionId){
 chatSessionId='sess_'+Math.random().toString(36).substr(2,12)+'_'+Date.now();
 localStorage.setItem('chatSessionId',chatSessionId);
 }
-var CHAT_SERVER='https://193.124.114.203:8443';
+var CHAT_SERVER='https://chat.edu-art.ru:8443';
 var chatClosed=localStorage.getItem('chatClosed');
 if(chatClosed==='yes'){
 chatOpen=false;
